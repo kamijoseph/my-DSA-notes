@@ -22,7 +22,7 @@ print(list3[1][0])
 
 
 
-# 2. Creating Tuples
+# 2. Creating Tuples>
 
 # Creating a Tuple with
 # the use of Strings

@@ -57,4 +57,4 @@ linked_list.display()
 #  1.2 ----> Doubly linked list
 
 class NodeDb:
-    pass
+    print("Incoming")

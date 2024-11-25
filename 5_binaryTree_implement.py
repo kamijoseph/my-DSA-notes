@@ -1,5 +1,5 @@
 
-# A Python class that represents an individual node ina binary tree
+# A Python class that represents an individual node ina binary tree>
 class Node:
     def __init__(self, key):
         self.left = None

@@ -18,6 +18,6 @@ heapq.heappush(li,4)
 print ("The modified heap after push is : ",end="")
 print (list(li))
 
-# using heappop() to pop smallest element
+# using heappop() to pop smallest element.
 print ("The popped and smallest element is : ",end="")
 print (heapq.heappop(li))

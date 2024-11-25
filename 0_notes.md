@@ -159,7 +159,7 @@ Pointer to the right child
     Preorder (Root, Left, Right) : 1 2 4 5 3
     Postorder (Left, Right, Root) : 4 5 2 3 1
 
-> > > > > Algorithm Inorder(tree)
+> > > > > Algorithm Inorder(tree).
 
     Traverse the left subtree, i.e., call Inorder(left-subtree)
     Visit the root.

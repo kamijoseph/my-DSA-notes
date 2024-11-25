@@ -74,7 +74,7 @@ class PriorityQueue(object):
             print()
             exit()
             
-
+# Calling
 myQueue = PriorityQueue()
 myQueue.insert(12)
 myQueue.insert(1)
