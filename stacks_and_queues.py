@@ -1,4 +1,5 @@
 
+# Stacks implementation
 stack = []
 
 # append() function to push an element in the stack
@@ -17,3 +18,14 @@ print(stack.pop())
 
 print('\nStack after elements are popped:')
 print(stack)
+
+# Queues implementation
+queue = []
+
+#append() function to push an element in the stack
+queue.append("F")
+queue.append("G")
+queue.append("F")
+
+print("Initial Queue: ")
+print(queue)
