@@ -1,7 +1,7 @@
 
 # 1. Linked list code implementation.
 #  1.1 ----> Singly linked list
-
+# 404
 
 
 #Creating the Node class for the nodes initializations
@@ -53,3 +53,8 @@ linked_list.append("D")
 # Display the linked list
 print("Linked List:")
 linked_list.display()
+
+#  1.2 ----> Doubly linked list
+
+class NodeDb:
+    pass

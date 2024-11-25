@@ -43,6 +43,7 @@
 # Linked Lists.
 
 > > > > > A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. The elements in a linked list are linked using pointers.
+
 > > > > > Check code section for an example implementation
 > > > > > Linked List Insertion - http://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/
 > > > > > Linked List Deletion (Deleting a given key) - http://www.geeksforgeeks.org/linked-list-set-3-deleting-node/
@@ -51,3 +52,26 @@
 > > > > > Search an element in a Linked List (Iterative and Recursive) - http://www.geeksforgeeks.org/search-an-element-in-a-linked-list-iterative-and-recursive/
 > > > > > Nth node from the end of a Linked List - https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/
 > > > > > Reverse a linked list - https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/
+
+# Stacks
+
+> > > > > A stack is a linear data structure that stores items in a Last-In/First-Out (LIFO) or First-In/Last-Out (FILO) manner. In stack, a new element is added at one end and an element is removed from that end only. The insert and delete operations are often called push and pop.
+> > > > > The functions associated with stack are:
+
+    empty() – Returns whether the stack is empty – Time Complexity: O(1)
+    size() – Returns the size of the stack – Time Complexity: O(1)
+    top() – Returns a reference to the topmost element of the stack – Time Complexity: O(1)
+    push(a) – Inserts the element ‘a’ at the top of the stack – Time Complexity: O(1)
+    pop() – Deletes the topmost element of the stack – Time Complexity: O(1)
+
+> > > > > Check code for implementation
+
+> > > > > More Links:
+
+https://www.geeksforgeeks.org/stack-set-4-evaluation-postfix-expression/
+https://www.geeksforgeeks.org/prefix-infix-conversion/
+https://www.geeksforgeeks.org/prefix-postfix-conversion/
+https://www.geeksforgeeks.org/postfix-prefix-conversion/
+https://www.geeksforgeeks.org/postfix-to-infix/
+https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/
+https://www.geeksforgeeks.org/stack-set-4-evaluation-postfix-expression/
