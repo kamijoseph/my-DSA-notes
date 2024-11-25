@@ -92,3 +92,20 @@
     Dequeue: Removes an item from the queue. The items are popped in the same order in which they are pushed. If the queue is empty, then it is said to be an Underflow condition – Time Complexity: O(1)
     Front: Get the front item from queue – Time Complexity: O(1)
     Rear: Get the last item from queue – Time Complexity: O(1)
+
+> > > > > Check stack_and_queque.py for code implementation
+
+> > > > > More links:
+
+    https://www.geeksforgeeks.org/queue-using-stacks/
+    https://www.geeksforgeeks.org/implement-stack-using-queue/
+    https://www.geeksforgeeks.org/implement-a-stack-using-single-queue/
+
+# Priority queue
+
+> > > > > Priority Queues are abstract data structures where each data/value in the queue has a certain priority. For example, In airlines, baggage with the title “Business” or “First-class” arrives earlier than the rest. Priority Queue is an extension of the queue with the following properties.
+
+An element with high priority is dequeued before an element with low priority.
+If two elements have the same priority, they are served according to their order in the queue.
+
+> > > > > Check stack_and_queue.py code for implementation
