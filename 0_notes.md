@@ -109,3 +109,34 @@ An element with high priority is dequeued before an element with low priority.
 If two elements have the same priority, they are served according to their order in the queue.
 
 > > > > > Check stack_and_queue.py code for implementation
+
+# Heap
+
+> > > > > heapq module in Python provides the heap data structure that is mainly used to represent a priority queue. The property of this data structure is that it always gives the smallest element (min heap) whenever the element is popped. Whenever elements are pushed or popped, heap structure is maintained.
+
+> > > > > The heap[0] element also returns the smallest element each time. It supports the extraction and insertion of the smallest element in the O(log n) times.
+
+> > > > > Generally, Heaps can be of two types:
+
+Max-Heap: In a Max-Heap the key present at the root node must be greatest among the keys present at all of it’s children. The same property must be recursively true for all sub-trees in that Binary Tree.
+Min-Heap: In a Min-Heap the key present at the root node must be minimum among the keys present at all of it’s children. The same property must be recursively true for all sub-trees in that Binary Tree.
+
+> > > > > More Links:
+> > > > > https://www.geeksforgeeks.org/heap-data-structure/
+
+    https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/
+    https://www.geeksforgeeks.org/binary-heap/
+    https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/
+    https://www.geeksforgeeks.org/nearly-sorted-algorithm/
+    https://www.geeksforgeeks.org/nearly-sorted-algorithm/
+    https://www.geeksforgeeks.org/k-th-largest-sum-contiguous-subarray/
+    https://www.geeksforgeeks.org/minimum-sum-two-numbers-formed-digits-array-2/
+
+# Binary trees
+
+> > > > > The topmost node of the tree is called the root whereas the bottommost nodes or the nodes with no children are called the leaf nodes. The nodes that are directly under a node are called its children and the nodes that are directly above something are called its parent.
+> > > > > A binary tree is a tree whose elements can have almost two children. Since each element in a binary tree can have only 2 children, we typically name them the left and right children. A Binary Tree node contains the following parts.
+
+Data
+Pointer to left child
+Pointer to the right child
