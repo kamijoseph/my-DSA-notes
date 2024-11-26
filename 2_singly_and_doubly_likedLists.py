@@ -54,7 +54,7 @@ linked_list.append("D")
 print("Linked List:")
 linked_list.display()
 
-#  1.2 ----> Doubly linked list
+#  1.2 ----> Doubly linked list>
 
 class NodeDb:
     print("Incoming")

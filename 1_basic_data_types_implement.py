@@ -2,7 +2,7 @@ import numpy as np
 
 
 
-# 1.Creating lists
+# 1.Creating lists.
 
 list = ["Boy", "Girl", "dad"]
 list2 = [1,3,4,5,6,7]

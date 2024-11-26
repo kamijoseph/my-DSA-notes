@@ -216,3 +216,16 @@ Dequeue a node from q
     https://www.geeksforgeeks.org/binary-tree-to-binary-search-tree-conversion/
     https://www.geeksforgeeks.org/find-the-minimum-element-in-a-binary-search-tree/
     https://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/
+
+# Graphs
+
+> > > > > A graph is a nonlinear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph. More formally a Graph can be defined as a Graph consisting of a finite set of vertices(or nodes) and a set of edges that connect a pair of nodes.
+
+> > > > > The following two are the most commonly used representations of a graph:
+
+    Adjacency matrix.
+    Adjacency lists.
+
+> > > > > Adjacency Matrix is a 2D array of size V x V where V is the number of vertices in a graph. Let the 2D array be adj[][], a slot adj[i][j] = 1 indicates that there is an edge from vertex i to vertex j. The adjacency matrix for an undirected graph is always symmetric. Adjacency Matrix is also used to represent weighted graphs. If adj[i][j] = w, then there is an edge from vertex i to vertex j with weight w.
+
+> > > > > An array of lists is used. The size of the array is equal to the number of vertices. Let the array be an array[]. An entry array[i] represents the list of vertices adjacent to the ith vertex. This representation can also be used to represent a weighted graph. The weights of edges can be represented as lists of pairs. Following is the adjacency list representation of the above graph.
