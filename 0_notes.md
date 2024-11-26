@@ -186,8 +186,33 @@ Level order traversal of a tree is breadth-first traversal for the tree. The lev
 For each node, first, the node is visited and then its child nodes are put in a FIFO queue. Below is the algorithm for the same –
 
 Create an empty queue q
-temp_node = root /_start from root_/
+temp*node = root /\_start from root*/
 Loop while temp_node is not NULL
 print temp_node->data.
 Enqueue temp_node’s children (first left then right children) to q
 Dequeue a node from q
+
+> > > > > More stuff to look at:
+
+    Insertion in a Binary Tree
+    Deletion in a Binary Tree
+    Inorder Tree Traversal without Recursion
+    Inorder Tree Traversal without recursion and without stack!
+    Print Postorder traversal from given Inorder and Preorder traversals
+    Find postorder traversal of BST from preorder traversal
+
+# Binary search Tree.
+
+> > > > > Binary Search Tree is a node-based binary tree data structure that has the following properties:
+
+    The left subtree of a node contains only nodes with keys lesser than the node’s key.
+    The right subtree of a node contains only nodes with keys greater than the node’s key.
+    The left and right subtree each must also be a binary search tree.
+
+> > > > > More:
+
+    https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/
+    https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversa/
+    https://www.geeksforgeeks.org/binary-tree-to-binary-search-tree-conversion/
+    https://www.geeksforgeeks.org/find-the-minimum-element-in-a-binary-search-tree/
+    https://www.geeksforgeeks.org/a-program-to-check-if-a-binary-tree-is-bst-or-not/
