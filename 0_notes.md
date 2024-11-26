@@ -176,3 +176,18 @@ Pointer to the right child
     Traverse the left subtree, i.e., call Postorder(left-subtree)
     Traverse the right subtree, i.e., call Postorder(right-subtree)
     Visit the root.
+
+> > > > > Time Complexity – O(n)
+
+Breadth-First or Level Order Traversal
+
+Level order traversal of a tree is breadth-first traversal for the tree. The level order traversal of the above tree is 1 2 3 4 5.
+
+For each node, first, the node is visited and then its child nodes are put in a FIFO queue. Below is the algorithm for the same –
+
+Create an empty queue q
+temp_node = root /_start from root_/
+Loop while temp_node is not NULL
+print temp_node->data.
+Enqueue temp_node’s children (first left then right children) to q
+Dequeue a node from q
