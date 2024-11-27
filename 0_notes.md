@@ -262,3 +262,29 @@ Dequeue a node from q
         return n\*fact(n-1)
 
 In the above example, base case for n < = 1 is defined and larger value of number can be solved by converting to smaller one till base case is reached.
+
+# Dynamic programming
+
+> > > > > Dynamic Programming is mainly an optimization over plain recursion. Wherever we see a recursive solution that has repeated calls for same inputs, we can optimize it using Dynamic Programming. The idea is to simply store the results of subproblems, so that we do not have to re-compute them when needed later. This simple optimization reduces time complexities from exponential to polynomial. For example, if we write simple recursive solution for Fibonacci Numbers, we get exponential time complexity and if we optimize it by storing solutions of subproblems, time complexity reduces to linear.
+
+> > > > > Tabulation vs Memoization.
+
+> > > > > There are two different ways to store the values so that the values of a sub-problem can be reused. Here, will discuss two patterns of solving dynamic programming (DP) problem:
+
+> > > > > Tabulation.(Bottom Up)
+> > > > > As the name itself suggests starting from the bottom and accumulating answers to the top.
+> > > > > Let’s describe a state for our DP problem to be dp[x] with dp[0] as base state and dp[n] as our destination state. So, we need to find the value of destination state i.e dp[n].
+> > > > > If we start our transition from our base state i.e dp[0] and follow our state transition relation to reach our destination state dp[n],S
+
+> > > > > memoization (Top Bottom)
+> > > > > Once, again let’s describe it in terms of state transition. If we need to find the value for some state say dp[n] and instead of starting from the base state that i.e dp[0] we ask our answer from the states that can reach the destination state dp[n] following the state transition relation, then it is the top-down fashion of DP.
+> > > > > Here, we start our journey from the top most destination state and compute its answer by taking in count the values of states that can reach the destination state, till we reach the bottom-most base state.
+
+# SEARCHING ALGORITHMS
+
+> > # Linear Search
+> >
+> > > > > Start from the leftmost element of arr[] and one by one compare x with each element of arr[]
+> > > > > If x matches with an element, return the index.
+> > > > > If x doesn’t match with any of the elements, return -1.
+> > > > > Check code for implementaton.
