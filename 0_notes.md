@@ -229,3 +229,12 @@ Dequeue a node from q
 > > > > > Adjacency Matrix is a 2D array of size V x V where V is the number of vertices in a graph. Let the 2D array be adj[][], a slot adj[i][j] = 1 indicates that there is an edge from vertex i to vertex j. The adjacency matrix for an undirected graph is always symmetric. Adjacency Matrix is also used to represent weighted graphs. If adj[i][j] = w, then there is an edge from vertex i to vertex j with weight w.
 
 > > > > > An array of lists is used. The size of the array is equal to the number of vertices. Let the array be an array[]. An entry array[i] represents the list of vertices adjacent to the ith vertex. This representation can also be used to represent a weighted graph. The weights of edges can be represented as lists of pairs. Following is the adjacency list representation of the above graph.
+
+> > > > > Depth First Search or DFS
+> > > > > Depth First Traversal for a graph is similar to Depth First Traversal of a tree. The only catch here is, unlike trees, graphs may contain cycles, a node may be visited twice. To avoid processing a node more than once, use a boolean visited array.
+
+> > > > > Algorithm:
+
+    Create a recursive function that takes the index of the node and a visited array.
+    Mark the current node as visited and print the node.
+    Traverse all the adjacent and unmarked nodes and call the recursive function with the index of the adjacent node.
