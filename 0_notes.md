@@ -238,3 +238,27 @@ Dequeue a node from q
     Create a recursive function that takes the index of the node and a visited array.
     Mark the current node as visited and print the node.
     Traverse all the adjacent and unmarked nodes and call the recursive function with the index of the adjacent node.
+
+> > > > > More links:
+
+    https://www.geeksforgeeks.org/graph-representations-using-set-hash/
+    https://www.geeksforgeeks.org/find-a-mother-vertex-in-a-graph/
+    https://www.geeksforgeeks.org/iterative-depth-first-traversal/
+    https://www.geeksforgeeks.org/count-number-nodes-given-level-using-bfs/
+    https://www.geeksforgeeks.org/count-possible-paths-two-vertices/
+
+# Recursion.
+
+> > > > > The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called a recursive function. Using the recursive algorithms, certain problems can be solved quite easily. Examples of such problems are Towers of Hanoi (TOH), Inorder/Preorder/Postorder Tree Traversals, DFS of Graph, etc.
+
+> > > > > What is the base condition in recursion?
+> > > > > In the recursive program, the solution to the base case is provided and the solution of the bigger problem is expressed in terms of smaller problems.
+
+> > > > > def fact(n): # base case
+
+        if (n < = 1)
+        return 1
+        else
+        return n\*fact(n-1)
+
+In the above example, base case for n < = 1 is defined and larger value of number can be solved by converting to smaller one till base case is reached.
