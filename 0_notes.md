@@ -323,3 +323,20 @@ In the above example, base case for n < = 1 is defined and larger value of numbe
 > > > > > Shift the elements of the sorted portion to the right to make space for the current element.
 > > > > > Insert the current element at its correct position in the sorted portion.
 > > > > > Repeat for all elements in the list.
+
+> > # Merge Sort Algorithm
+> >
+> > > > > Merge Sort is a divide-and-conquer sorting algorithm that splits the array into smaller subarrays, sorts them, and then merges them back together. It is highly efficient with a time complexity of 𝑂(nlogn) in all cases.
+
+> > > > > Steps
+> > > > > Divide:
+
+    Recursively split the array into two halves until each subarray contains only one element (a single element is inherently sorted).
+
+> Conquer:
+
+    Sort and merge the smaller subarrays into sorted larger arrays.
+
+> Combine:
+
+    Continue merging until the entire array is sorted.
