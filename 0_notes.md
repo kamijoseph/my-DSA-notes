@@ -292,3 +292,12 @@ In the above example, base case for n < = 1 is defined and larger value of numbe
 > > # Binary Search
 > >
 > > > > > Search a sorted array by repeatedly dividing the search interval in half. Begin with an interval covering the whole array. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. Otherwise, narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.
+
+# SORTiNG ALGORITHMS
+
+> > # Selection Sort
+> >
+> > > > > The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray.
+
+> > > > > Selection sort is not efficient for large datasets due to its :
+> > > > > 𝑂(n\*\*2) time complexity. It is mostly used for educational purposes or when working with small arrays.
