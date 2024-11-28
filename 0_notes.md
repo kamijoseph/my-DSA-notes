@@ -311,3 +311,15 @@ In the above example, base case for n < = 1 is defined and larger value of numbe
 > > > > > If the current element is greater than the next, swap them.
 > > > > > Repeat this process for all elements, reducing the range by one after each pass (since the largest element "bubbles" to its correct position in each iteration).
 > > > > > Stop when no swaps are needed during a pass.
+
+> > # Insertion Sort Algorithm
+> >
+> > > > > Insertion Sort Algorithm
+> > > > > Insertion sort is a simple and efficient sorting algorithm, particularly useful for small or nearly sorted datasets. It works by building the sorted portion of the list one element at a time.
+
+> > > > > Steps
+> > > > > Start with the second element (index 1) and assume the first element is already sorted.
+> > > > > Compare the current element with the elements in the sorted portion.
+> > > > > Shift the elements of the sorted portion to the right to make space for the current element.
+> > > > > Insert the current element at its correct position in the sorted portion.
+> > > > > Repeat for all elements in the list.
