@@ -295,9 +295,19 @@ In the above example, base case for n < = 1 is defined and larger value of numbe
 
 # SORTiNG ALGORITHMS
 
-> > # Selection Sort
+> > # Selection Sort algorithm
 > >
 > > > > > The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray.
 
 > > > > > Selection sort is not efficient for large datasets due to its :
 > > > > > 𝑂(n\*\*2) time complexity. It is mostly used for educational purposes or when working with small arrays.
+
+> > # BubBle sort algorithm
+> >
+> > > > > Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The process is repeated until the list is sorted.
+> > > > > Steps:
+> > > > > Start from the beginning of the list.
+> > > > > Compare each pair of adjacent elements.
+> > > > > If the current element is greater than the next, swap them.
+> > > > > Repeat this process for all elements, reducing the range by one after each pass (since the largest element "bubbles" to its correct position in each iteration).
+> > > > > Stop when no swaps are needed during a pass.
