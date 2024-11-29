@@ -340,3 +340,17 @@ In the above example, base case for n < = 1 is defined and larger value of numbe
 > Combine:
 
     Continue merging until the entire array is sorted.
+
+> > # Quick Sort algorithm
+> >
+> > > > > QuickSort is another divide-and-conquer sorting algorithm. It selects a "pivot" element, partitions the array into two subarrays (elements less than the pivot and elements greater than the pivot), and recursively sorts the subarrays.
+
+> > > > > Steps of QuickSort
+> > > > > Choose a Pivot:
+> > > > > Select an element as the pivot (e.g., the last element, the first element, or a random element).
+> > > > > Partition the Array:
+> > > > > Rearrange the array so that all elements less than the pivot are on its left and all elements greater are on its right.
+> > > > > Recursively Sort:
+> > > > > Apply QuickSort to the left and right subarrays.
+> > > > > Base Case:
+> > > > > When the array has zero or one element, it is already sorted.
