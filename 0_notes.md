@@ -354,3 +354,15 @@ In the above example, base case for n < = 1 is defined and larger value of numbe
 > > > > > Apply QuickSort to the left and right subarrays.
 > > > > > Base Case:
 > > > > > When the array has zero or one element, it is already sorted.
+
+> > # Shell Sort Algorithm
+> >
+> > > > > ShellSort is an optimization of Insertion Sort. Instead of comparing adjacent elements (as in Insertion Sort), it compares elements that are far apart (determined by a "gap"). As the algorithm progresses, the gap is gradually reduced until it becomes 1, at which point it functions like a standard Insertion Sort.
+
+> > > > > Steps of ShellSort
+> > > > > Choose a Gap Sequence:
+> > > > > Start with a large gap and reduce it step by step until it becomes 1.
+> > > > > Sort Subarrays:
+> > > > > Perform a modified insertion sort for elements separated by the current gap.
+> > > > > Repeat:
+> > > > > Decrease the gap and repeat the sorting process.
