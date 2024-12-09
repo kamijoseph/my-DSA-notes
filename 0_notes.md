@@ -93,7 +93,7 @@
     Front: Get the front item from queue – Time Complexity: O(1)
     Rear: Get the last item from queue – Time Complexity: O(1)
 
-> > > > > Check stack_and_queque.py for code implementation
+> > > > > Check stack_and_queue.py for code implementation
 
 > > > > > More links:
 

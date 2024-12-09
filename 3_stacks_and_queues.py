@@ -83,3 +83,50 @@ myQueue.insert(7)
 print(myQueue)        
 while not myQueue.isEmpty():
     print(myQueue.delete())
+    
+    
+
+# Example two
+import heapq
+class PriorityQueue:
+    def __init__(self):
+        self.heap = []
+    
+    def push(self, item, priority):
+        heapq.heappush(self.heap, (priority, item))
+        print(f"Added item: {item} with priority: {priority}")
+        
+    def pop(self):
+        if not self.is_empty():
+            priority, item = heapq.heappop(self.heap)
+            print(f"Removed item: {item} with priority: {priority}")
+            return item
+        raise IndexError("Pop from an empty priority queue")
+    
+    def peek(self):
+        if not self.is_empty():
+            return self.heap[0][1]
+        raise IndexError("peek from an empty priority queue")
+    
+    def is_empty(self):
+        return len(self.heap) == 0
+    
+    def size(self):
+        return len(self.heap)
+
+# Example Usage
+pq = PriorityQueue()
+
+# Adding items to the priority queue
+pq.push("task1", 3)  # Lower priority number = higher priority
+pq.push("task2", 1)
+pq.push("task3", 2)
+
+# Viewing and removing elements
+print("Top of queue:", pq.peek())  # task2
+pq.pop()  # Removes "task2"
+pq.pop()  # Removes "task3"
+pq.pop()  # Removes "task1"
+
+# Check if queue is empty
+print("Is queue empty?", pq.is_empty())
