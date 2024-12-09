@@ -81,3 +81,52 @@ root.left.right = Nodedb(5)
             
 print ("Level Order Traversal of binary tree is -")
 PrintLevelOrder(root)
+
+# Example 2
+class Nodde:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.rigt = None
+        
+class Binary2Tree():
+    def __init__(self):
+        self.root = None
+        
+    def insert(self, value):
+        new_node = Nodde(value)
+        
+        if not self.root:
+            self.root = new_node
+            return
+        queue = [self.root]
+        while queue:
+            current = queue.pop(0)
+            if not current.left:
+                current.left = new_node
+                return
+            else:
+                queue.append(current.left)
+            if not current.right:
+                current.right = new_node
+                return
+            else:
+                queue.append(current.right)
+    
+    def in_order_traversal(self, node):
+        # """In-order traversal."""
+        if node:
+            self.in_order_traversal(node.left)
+            print(node.value, end=" ")
+            self.in_order_traversal(node.right)
+            
+# Example Usage
+bt = Binary2Tree()
+bt.insert(10)
+bt.insert(20)
+bt.insert(30)
+bt.insert(40)
+bt.insert(50)
+
+print("In-order Traversal:")
+bt.in_order_traversal(bt.root)  # Output: 40 20 50 10 30
