@@ -67,7 +67,6 @@ def fibonacci(n, current=0, next_val=1):
     # Recursive case: move to the next Fibonacci number
     fibonacci(n - 1, next_val, current + next_val)
 
-# Example Usage
 fibonacci(6)  # Output: 0 1 1 2 3 5
 
 # Example 4
