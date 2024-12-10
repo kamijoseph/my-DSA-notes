@@ -30,3 +30,33 @@ if result != -1:
     print(f"Element is present at index {result}")
 else:
     print("Element is not present in array")
+
+# Code 2
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+    
+    while low <= high:
+        mid = (low + high) // 2
+        
+        # Check if the target is at the middle
+        if arr[mid] == target:
+            return mid
+        
+        # if target is bigger than mid, ignore the left side of the array
+        elif arr[mid] < target:
+            low = mid + 1
+        
+        # If target is smaller, ignore the right half
+        else:
+            high = mid - 1
+    return -1 # Target Not Found
+
+arr = [2, 5, 6, 7, 8, 10, 12]
+target = 7
+result = binary_search(arr, target)
+
+if result != -1:
+    print(f"Element {target} found at index {result}")
+else:
+    print(f"Element {target} not found in the array.")
