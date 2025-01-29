@@ -2,7 +2,7 @@
 # heap sort algorithm implementation
 
 def swap(array, i, j):
-    pass
+    array[i], array[j] = array[j], array[i]
 
 def siftDown(aray, i, upper):
     pass
