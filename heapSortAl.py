@@ -30,4 +30,14 @@ def siftDown(array, i, upper):
         break
 
 def heapSort(array):
-    pass
+    for j in range((len(array) - 2) // 2, -1, 1):
+        siftDown(array, j, len(array))
+        
+    for end in range(len(array), -1, 0, -1):
+        swap(array, 0, end)
+        siftDown(array, 0, end)
+
+array = [5, 16 ,8 ,14 ,20 ,26]
+result = heapSort(array)
+print(f"Sorted array: {result}")
+        
