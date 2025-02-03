@@ -82,6 +82,7 @@ class LinkedList:
 if __name__ == "__main__":
     ll = LinkedList()
     ll.insertValues(["Mango", "Banana", "Orange", "Pineapple", "Watermelon"])
-    ll.inserAt(2, "kiwi")
-    ll.inserAt(0, "figs")
+    ll.inserAt(2, "Kiwi")
+    ll.inserAt(0, "Figs")
+    ll.inserAt(3, "Apple")
     ll.print()
