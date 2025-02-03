@@ -14,11 +14,17 @@ class LinkedList:
         
     def insertEnd(self, data):
         if self.head is None:
+            self.head = Node(data, None)
             return
         iter = self.head
         while iter.next:
             iter = iter.next
         iter.next = Node(data, None)
+        
+    def insertValues(self, dataList):
+        self.head = None
+        for data in dataList:
+            self.insertEnd(data)
         
     def print(self):
         if self.head is None:
@@ -32,12 +38,16 @@ class LinkedList:
             iter = iter.next
         print(llString)
         
-
+    def getLength(self):
+        count = 0
+        iter = self.head
+        while iter:
+            count += 1
+            iter = iter.next
+        return count
+        
 if __name__ == "__main__":
     ll = LinkedList()
-    ll.insertBegining(5)
-    ll.insertBegining(89)
-    ll.insertBegining(100)
-    ll.insertEnd(300)
-    ll.insertEnd(131)
+    ll.insertValues(["Mango", "Banana", "Orange", "Pineapple", "Watermelon"])
     ll.print()
+    print("Length", ll.getLength())
