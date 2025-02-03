@@ -26,6 +26,23 @@ class LinkedList:
         for data in dataList:
             self.insertEnd(data)
             
+    def inserAt(self, index, data):
+        if index < 0 or index > self.getLength():
+            raise Exception ("Invalid Index")
+        if index == 0:
+            self.insertBegining(data)
+            return
+        
+        count = 0
+        iter = self.head
+        while iter:
+            if count == index - 1:
+                node = Node(data, iter.next)
+                iter.next = node
+                break
+            iter = iter.next
+            count += 1
+            
     def removeAt(self, index):
         if index < 0 or index >= self.getLength():
             raise Exception ("Invalid Index.")
@@ -40,6 +57,7 @@ class LinkedList:
                 iter.next = iter.next.next
                 break
             iter = iter.next
+            count += 1
         
     def print(self):
         if self.head is None:
@@ -64,5 +82,6 @@ class LinkedList:
 if __name__ == "__main__":
     ll = LinkedList()
     ll.insertValues(["Mango", "Banana", "Orange", "Pineapple", "Watermelon"])
-    ll.removeAt(2)
+    ll.inserAt(2, "kiwi")
+    ll.inserAt(0, "figs")
     ll.print()
