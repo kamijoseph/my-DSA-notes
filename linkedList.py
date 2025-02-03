@@ -21,3 +21,12 @@ class LinkedList:
         while iter:
             llString += str(iter.data) + "-->"
             iter = iter.next
+        print(llString)
+        
+
+if __name__ == "__main__":
+    ll = LinkedList()
+    ll.insertBegining(5)
+    ll.insertBegining(89)
+    ll.insertBegining(100)
+    ll.print()
